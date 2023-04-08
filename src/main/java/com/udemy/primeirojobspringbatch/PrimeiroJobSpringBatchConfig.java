@@ -30,6 +30,8 @@ public class PrimeiroJobSpringBatchConfig {
 				.build();
 	}
 
+
+
 	@Bean
 	@StepScope
 	public Tasklet imprimeOlaTasklet(@Value("#{jobParameters['nome']}") String nome) {
